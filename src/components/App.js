@@ -4,10 +4,6 @@ import * as actions from '../actions';
 import { connect } from 'react-redux';
 
 class App extends Component {
-  componentDidMount() {
-    console.log('hi', this.props.count);
-  }
-
   increment = count => {
     this.props.incrementCount(count);
   };
